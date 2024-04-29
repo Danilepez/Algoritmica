@@ -1,15 +1,15 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> // Incluir todas las bibliotecas estándar necesarias
 
 using namespace std;
 
-#define input freopen("in.txt","r",stdin)
-#define output freopen("out.txt","w",stdout)
+#define input freopen("in.txt","r",stdin) // Redirigir la entrada estándar desde un archivo
+#define output freopen("out.txt","w",stdout) // Redirigir la salida estándar a un archivo
 
 int main() {
-    input;
+    input; // Redirigir entrada
     // Obtener el número de nodos del grafo.
     int numNodos;
-    std::cin >> numNodos;
+    cin >> numNodos;
 
     vector<int> grafo[numNodos]; // Lista de adyacencia para representar el grafo. 
     
@@ -29,9 +29,9 @@ int main() {
     for (int i = 0; i < numNodos; i++) {
         // Imprimir cada nodo conectado al nodo 'i'.
         for (int j = 0; j < grafo[i].size(); j++) {
-            cout << "[" << grafo[i][j] << "]";
+            cout << "[" << grafo[i][j] << "]"; // Imprimir el nodo de destino
         }
-        cout << std::endl;
+        cout << std::endl; // Imprimir nueva línea al final de cada lista de adyacencia
     }
 
     return 0; 
