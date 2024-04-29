@@ -1,4 +1,3 @@
-// Implementación de DFS (Búsqueda en Profundidad) en un Grafo en C++
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -12,30 +11,30 @@ private:
 
 public:
     Grafo(int vertices) : V(vertices) {
-        adj.resize(V);
+        adj.resize(V); // Inicialización del tamaño del vector de listas de adyacencia
     }
 
     void agregarArista(int u, int v) {
-        adj[u].push_back(v);
-        adj[v].push_back(u); // Para un grafo no dirigido
+        adj[u].push_back(v); // Agregar v a la lista de adyacencia de u
+        adj[v].push_back(u); // Para un grafo no dirigido, agregar u a la lista de adyacencia de v
     }
 
     void DFS(int inicio) {
-        vector<bool> visitado(V, false);
-        stack<int> pila;
+        vector<bool> visitado(V, false); // Vector para marcar los vértices visitados
+        stack<int> pila; // Pila para realizar el recorrido en profundidad
 
-        pila.push(inicio);
-        visitado[inicio] = true;
+        pila.push(inicio); // Iniciar con el vértice inicial
+        visitado[inicio] = true; // Marcar el vértice inicial como visitado
 
-        while (!pila.empty()) {
-            int actual = pila.top();
-            pila.pop();
-            cout << actual << " ";
+        while (!pila.empty()) { // Mientras la pila no esté vacía
+            int actual = pila.top(); // Obtener el vértice actual de la pila
+            pila.pop(); // Sacar el vértice actual de la pila
+            cout << actual << " "; // Imprimir el vértice actual
 
-            for (int vecino : adj[actual]) {
-                if (!visitado[vecino]) {
-                    pila.push(vecino);
-                    visitado[vecino] = true;
+            for (int vecino : adj[actual]) { // Iterar sobre los vecinos del vértice actual
+                if (!visitado[vecino]) { // Si el vecino no ha sido visitado
+                    pila.push(vecino); // Agregar el vecino a la pila
+                    visitado[vecino] = true; // Marcar el vecino como visitado
                 }
             }
         }
@@ -43,8 +42,9 @@ public:
 };
 
 int main() {
-    Grafo g(5);
+    Grafo g(5); // Crear un grafo con 5 vértices
 
+    // Agregar aristas al grafo
     g.agregarArista(0, 1);
     g.agregarArista(0, 4);
     g.agregarArista(1, 2);
@@ -53,6 +53,7 @@ int main() {
     g.agregarArista(2, 3);
     g.agregarArista(3, 4);
 
+    // Realizar un recorrido en profundidad desde el vértice 0
     cout << "DFS desde el vértice 0: ";
     g.DFS(0);
 
