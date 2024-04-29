@@ -1,21 +1,23 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> // Incluir todas las bibliotecas estándar necesarias
 
-#include<iostream>
+#include<iostream> // Incluir la biblioteca para entrada/salida estándar
 
-#define input freopen("in.txt","r",stdin)
-#define output freopen("out.txt","w",stdout)
+#define input freopen("in.txt","r",stdin) // Redirigir la entrada estándar desde un archivo
+#define output freopen("out.txt","w",stdout) // Redirigir la salida estándar a un archivo
 
 using namespace std;
+
 int main() {
-    input;
-    output;
+    input; // Redirigir entrada
+    output; // Redirigir salida
+
     // Solicitar al usuario el número de nodos en el grafo.
     int numNodos;
     cin >> numNodos;
 
     // Crear una matriz de adyacencia para representar el grafo.
     int grafo[numNodos][numNodos];
-    memset(grafo, 0, sizeof(grafo));
+    memset(grafo, 0, sizeof(grafo)); // Inicializar la matriz con ceros
 
     // Solicitar al usuario el número de aristas en el grafo.
     int numAristas;
@@ -32,9 +34,9 @@ int main() {
     // Imprimir la matriz de adyacencia para visualizar el grafo.
     for (int i = 0; i < numNodos; i++) {
         for (int j = 0; j < numNodos; j++) {
-            cout << "[" << grafo[i][j] << "]";
+            cout << "[" << grafo[i][j] << "]"; // Imprimir el valor de cada celda de la matriz
         }
-        cout << endl;
+        cout << endl; // Imprimir nueva línea al final de cada fila
     }
 
     return 0; 
