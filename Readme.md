@@ -14,5 +14,3 @@ Explicaciones de Código
 En cada ejercicio, he incluido comentarios detallados en el código fuente que explican qué hace cada línea y por qué se ha escrito de esa manera. Estos comentarios son útiles para entender el funcionamiento del programa y aprender los conceptos de programación aplicados en cada ejercicio.
 
 ¡Espero que encuentres útiles estas explicaciones y disfrutes explorando los ejercicios de programación!
-
-Puedes personalizar este README según tus preferencias y agregar más detalles sobre tus proyectos, habilidades y experiencia si lo deseas. ¡Espero que te sea útil!
