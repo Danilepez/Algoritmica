@@ -13,4 +13,6 @@ Este repositorio contiene una serie de ejercicios de programación desarrollados
 Explicaciones de Código
 En cada ejercicio, he incluido comentarios detallados en el código fuente que explican qué hace cada línea y por qué se ha escrito de esa manera. Estos comentarios son útiles para entender el funcionamiento del programa y aprender los conceptos de programación aplicados en cada ejercicio.
 
+En este repositorio también encontrarás ejemplos de implementaciones de estructuras de datos y algoritmos comunes en el ámbito de la informática. Incluye ejemplos de pilas, colas, grafos, así como algoritmos de búsqueda en anchura (BFS) y búsqueda en profundidad (DFS). Cada implementación viene acompañada de comentarios que explican su funcionamiento y uso, lo que facilita su comprensión y aprendizaje.
+
 ¡Espero que encuentres útiles estas explicaciones y disfrutes explorando los ejercicios de programación!
